@@ -7,6 +7,7 @@ from shinywidgets import output_widget, render_widget
 # Function to fetch the data from the database using SQLAlchemy engine
 def fetch_houses_and_kingdoms():
     # Create the database engine
+                           # Í sameiningu kóoðanna mun server connection vera breytt, og sett rétt inn á öruggan hátt 
     engine = create_engine(f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}')
     # Define the SQL query
     query = """
